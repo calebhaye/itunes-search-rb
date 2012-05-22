@@ -8,7 +8,7 @@ This was created for use on musicxray.com if you think you can do better send yo
 	
 == Usage
 	
-    base = Itunes::Base.new	
+    base = ItunesSearch::Base.new	
     search_object = base.search("term"=>"The Killers")
     
     # get an array of the search_objects
