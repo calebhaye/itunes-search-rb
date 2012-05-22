@@ -16,6 +16,7 @@ This was created for use on musicxray.com if you think you can do better send yo
     results.each do |result|
         puts result.trackViewUrl
     end
+
     puts result.attributes
 
 
