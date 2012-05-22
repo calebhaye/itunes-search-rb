@@ -14,7 +14,7 @@ This was created for use on musicxray.com if you think you can do better send yo
     # get an array of the search_objects
     results = search_object.results
     results.each do |result|
-	puts result.trackViewUrl
+        puts result.trackViewUrl
     end
     puts result.attributes
 
