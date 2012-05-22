@@ -8,18 +8,15 @@ This was created for use on musicxray.com if you think you can do better send yo
 	
 == Usage
 	
-    base = Itunes::Base.new
-	
+    base = Itunes::Base.new	
     search_object = base.search("term"=>"The Killers")
-	
+    
     # get an array of the search_objects
-	
     results = search_object.results
-	
     results.each do |result|
 	puts result.trackViewUrl
     end
-	
+    
     puts result.attributes
 
 
