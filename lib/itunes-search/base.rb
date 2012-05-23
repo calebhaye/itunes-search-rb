@@ -1,11 +1,12 @@
 module ItunesSearch 
 
-  ENDPOINT = "http://ax.phobos.apple.com.edgesuite.net/WebObjects/MZStoreServices.woa/wa/wsSearch"
+  ENDPOINT = "http://itunes.apple.com/search" #"http://ax.phobos.apple.com.edgesuite.net/WebObjects/MZStoreServices.woa/wa/wsSearch"
   
   class Base
-   
-    def search(*args)
-      return ItunesSearch::Search.new(*args)  
+    attr_accessor :search_type
+    
+    def search(search_type, query)
+      return ItunesSearch::Search.new(search_type, CGI::escape(query))  
     end  
   end
 end

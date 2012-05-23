@@ -1,15 +1,15 @@
-= itunes-search
+= itunes-search-rb
 
-This was created for use on musicxray.com if you think you can do better send your resume to jeff at musicxray.com
+This project allows you to search iTunes using Ruby
 
 == Installation
 
-	gem install itunes-search
-	
+  gem install itunes-search-rb
+  
 == Usage
-	
-    base = ItunesSearch::Base.new	
-    search_object = base.search("term"=>"The Killers")
+  
+    base = ItunesSearch::Base.new 
+    search_object = base.search("term", "The Killers")
     
     # get an array of the search_objects
     results = search_object.results
@@ -18,7 +18,6 @@ This was created for use on musicxray.com if you think you can do better send yo
     end
 
     puts result.attributes
-
 
 == Note on Patches/Pull Requests
  
@@ -32,4 +31,4 @@ This was created for use on musicxray.com if you think you can do better send yo
 
 == Copyright
 
-Copyright (c) 2010 jeff durand. See LICENSE for details.
+Copyright (c) 2012 Caleb Adam Haye. See LICENSE for details.

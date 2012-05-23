@@ -4,12 +4,12 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "itunes-search"
+    gem.name = "itunes-search-rb"
     gem.summary = %Q{Itunes Search}
-    gem.description = %Q{Pretty simple interface for the itunes search api will return results as array of results objects and offer reasonable accessor methods variables}
-    gem.email = "jeff.durand@gmail.com"
-    gem.homepage = "http://github.com/johnnyiller/itunes-search"
-    gem.authors = ["jeff durand"]
+    gem.description = %Q{This project allows you to search iTunes using Ruby}
+    gem.email = "caleb@fire.coop"
+    gem.homepage = "http://github.com/calebhaye/itunes-search"
+    gem.authors = ["Caleb Adam Haye"]
     gem.add_development_dependency "shoulda", ">= 0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
