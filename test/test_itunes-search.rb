@@ -11,7 +11,7 @@ class TestItunesSearch < Test::Unit::TestCase
     end
     context "Band exists on itunes" do 
       setup do 
-        @so = @base.search("term"=>"The Killers")
+        @so = @base.search("term", "J Boog")
       end
       should "have result set" do
         assert @so.results.size>0
@@ -25,7 +25,7 @@ class TestItunesSearch < Test::Unit::TestCase
     end
     context "Band does not exist on itunes" do 
       setup do 
-        @so = @base.search("term"=>"dsafjlkdsajflkjdsa")
+        @so = @base.search("term", "dsafjlkdsajflkjdsa")
       end
       should "have empty result set" do
         assert @so.results.empty?

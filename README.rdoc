@@ -9,7 +9,7 @@ This project allows you to search iTunes using Ruby
 == Usage
   
     base = ItunesSearch::Base.new 
-    search_object = base.search("term", "The Killers")
+    search_object = base.search("term", "J Boog")
     
     # get an array of the search_objects
     results = search_object.results
